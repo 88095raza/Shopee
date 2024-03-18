@@ -7,7 +7,7 @@ import StripeCheckout from "react-stripe-checkout";
 import axios from "axios";
 
 const Cart = () => {
-  const productData= useSelector((state)=> state .shopee.productData)
+  const productData= useSelector((state)=> state.shopee.productData)
   const [totalAmount,setTotalAmt]=useState("");
   const userInfo = useSelector((state)=> state.shopee.userInfo);
   const [usePaynow,setPaynow]=useState(false);
